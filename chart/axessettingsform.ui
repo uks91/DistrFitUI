@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AxesSettingsForm</class>
+ <widget class="QWidget" name="AxesSettingsForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>238</width>
+    <height>139</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>238</width>
+    <height>139</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lblTitle">
+     <property name="text">
+      <string>Название оси</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="txtTitle"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="lblFrom">
+     <property name="text">
+      <string>От</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="DoubleNumberEdit" name="txtFrom"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="lblTo">
+     <property name="text">
+      <string>До</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="DoubleNumberEdit" name="txtTo"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="lblTicks">
+     <property name="text">
+      <string>Количество делений</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="IntNumberEdit" name="txtTicks"/>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QCheckBox" name="cbxAutoRange">
+     <property name="text">
+      <string>Автоматическая настройка диапазона</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DoubleNumberEdit</class>
+   <extends>QLineEdit</extends>
+   <header>extra_widgets/numberedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>IntNumberEdit</class>
+   <extends>QLineEdit</extends>
+   <header>extra_widgets/numberedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
